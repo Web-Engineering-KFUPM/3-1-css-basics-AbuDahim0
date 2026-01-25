@@ -1,0 +1,224 @@
+/* SocialBook CSS Styling Practice - Starter File */
+/* Complete the TODOs below to style your social media app */
+
+
+/* TODO 1: Use the <link> tag inside the <head> section to attach styles.css */
+
+
+/* TODO 2: Basic Element Selectors */
+/* Style all paragraphs with color of value #333 and font-size of 16px */
+/* Style all span elements with color of value #888 and font-size of 14px */
+
+
+/* TODO 3: Class Selectors */
+/* Style usernames with class "username" to have color of value #1877f2 and font-weight as bold */
+/* Style posts with class "blue-text" to have color of value #4267B2 */
+/* Style posts with class "red-text" to have color of value #e74c3c */
+/* Style highlighted posts with class "highlight" to have background-color of value #f0f2f5 and padding of 15px */
+
+
+/* TODO 4: ID Selectors */
+/* Style the featured user with id "featured-user" to have color of value #42b883 and font-size of 18px */
+
+
+/* TODO 5: Specificity Battle */
+/* Create multiple rules for the bio with id "specificity-test" and class "winner" */
+/* Rule 1: Use element selector p to make color of value #333 */
+
+/* Rule 2: Use class selector .winner to make color of value #ff6b6b */
+
+/* Rule 3: Use ID selector #specificity-test to make color of value #4ecdc4 */
+
+/* Rule 4: Use element + class selector p.winner to make color of value #95a5a6 */
+
+
+/* TODO 6: !important Override */
+/* Use !important to override inline styles for class "important-test" */
+/* Make the color of value #e67e22 !important */
+
+
+/* TODO 7: Descendant Selectors */
+/* Style messages inside elements with class "chat-container" to have color of value #2c3e50 */
+/* Style input elements inside elements with class "simple-form" to have border of value 1px solid #ccc */
+/* Style message times inside elements with class "chat-container" to have color of value #7f8c8d and font-size of 12px */
+/* Style input elements inside elements with class "simple-form" to have background-color of value #ffffff */
+/* Style input elements inside elements with class "simple-form" to have color of value #333 */
+
+
+/* TODO 8: Pseudo-classes */
+/* Style buttons with class "send-button" on hover to have background-color of value #3b5998 and text color as white */
+/* Style buttons inside elements with class "simple-form" on hover to have background-color of value #145dbf */
+/* Style links with class "chat-link" on hover to have color of value #1877f2 and text-decoration as none */
+
+
+/* TODO 9: Group Selectors */
+/* Style trending tags h4, h5, h6 with class "trending-tag" to have color of value #8b9dc3 and make the font-family Arial */
+
+
+/* Basic Social Media Styling (Already completed for you) */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.navigation {
+    background-color: #4267B2;
+    padding: 15px;
+    text-align: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #e4e6ea;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+.post {
+    background-color: #f8f9fa;
+    border: 1px solid #dadde1;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.post h3 {
+    margin: 0 0 8px 0;
+}
+
+.post p {
+    margin: 8px 0;
+}
+
+.timestamp {
+    color: #65676b;
+    font-size: 13px;
+}
+
+.profile-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dadde1;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.message-thread {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.chat-container {
+    margin: 10px 0;
+    padding: 8px 0;
+}
+
+.message {
+    margin: 4px 0;
+    padding: 8px 12px;
+    border-radius: 18px;
+    display: inline-block;
+    max-width: 70%;
+}
+
+.message.sent {
+    background-color: #0084ff;
+    color: white;
+    float: right;
+    clear: both;
+}
+
+.message.received {
+    background-color: #e4e6ea;
+    color: #1c1e21;
+    float: left;
+    clear: both;
+}
+
+.message-time {
+    font-size: 11px;
+    color: #65676b;
+    display: block;
+    clear: both;
+    margin-top: 4px;
+}
+
+button {
+    background-color: #42b883;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #369870;
+}
+
+.contact-container {
+    background-color: #f8f9fa;
+    border: 1px solid #dadde1;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    color: #65676b;
+    font-size: 14px;
+}
+
+/*Start writing you css code from here*/
+

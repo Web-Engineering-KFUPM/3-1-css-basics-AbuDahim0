@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook - CSS Styling Practice</title>
+    <!-- TODO: Link the external CSS file here -->
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- Header Section -->
+        <header>
+            <h1>SocialBook</h1>
+            <p>A simple social media app - Style it with CSS!</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <a href="#feed">Feed</a>
+            <a href="#profile">Profile</a>
+            <a href="#messages">Messages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- News Feed Section -->
+        <section id="feed">
+            <h2>News Feed</h2>
+
+            <!-- Post 1 -->
+            <div class="post">
+                <h3 class="username">john_doe</h3>
+                <p>Just finished my web development project! 🎉</p>
+                <span class="timestamp">2 hours ago</span>
+            </div>
+
+            <!-- Post 2 - Highlighted/Pinned -->
+            <div class="post highlight">
+                <h3 id="featured-user" class="username">sarah_dev</h3>
+                <p class="blue-text">Check out this amazing CSS tutorial I found!</p>
+                <p class="red-text">Link in my bio 👆</p>
+                <span class="timestamp">5 hours ago</span>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post">
+                <h3 class="username">alex_coder</h3>
+                <p>Working late on CSS specificity... when will it end? 😅</p>
+                <span class="timestamp">1 day ago</span>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>User Profile</h2>
+
+            <div class="profile-card">
+                <h3>CSS Specificity Battle</h3>
+                <p class="winner" id="specificity-test">
+                    This bio text color depends on CSS specificity rules!
+                </p>
+                <p class="follower-count">1,337 followers</p>
+            </div>
+
+            <div class="profile-card">
+                <h3>Bio Override Test</h3>
+                <p class="important-test" style="color: blue;">
+                    This bio has inline style, but will !important override it?
+                </p>
+            </div>
+        </section>
+
+        <!-- Messages Section -->
+        <section id="messages">
+            <h2>Messages</h2>
+
+            <div class="message-thread">
+                <h3>Chat with Friends</h3>
+                <div class="chat-container">
+                    <p class="message sent">Hey! How's your CSS project going?</p>
+                    <span class="message-time">You - 10:30 AM</span>
+                </div>
+                <div class="chat-container">
+                    <p class="message received">Pretty good! Learning about descendant selectors.</p>
+                    <span class="message-time">Friend - 10:32 AM</span>
+                </div>
+            </div>
+
+            <div class="message-thread">
+                <h3>Interactive Elements</h3>
+                <button class="send-button">Send Message</button>
+                <a href="#" class="chat-link">Start New Chat</a>
+            </div>
+        </section>
+
+        <!-- contact form Section -->
+        <section id="contact"> 
+            <form class="contact-container simple-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Trending Section -->
+        <section id="trending">
+            <h2>Trending Topics</h2>
+            <h4 class="trending-tag">#WebDevelopment</h4>
+            <h5 class="trending-tag">#CSS</h5>
+            <h6 class="trending-tag">#HTML</h6>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 SocialBook - A CSS Styling Exercise</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
