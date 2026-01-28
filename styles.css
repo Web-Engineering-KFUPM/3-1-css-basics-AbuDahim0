@@ -76,3 +76,14 @@ header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: w
 .navigation a:hover { background: rgba(255,255,255,0.1); border-radius: 4px; }
 section { padding: 20px; border-bottom: 1px solid #eee; }
 .post, .profile-card { background: #f8f9fa; border: 1px solid #dadde1; border-radius: 8px; padding: 15px; margin: 10px 0; }
+/* Fix for TODO 7: Form Input Styling */
+.simple-form input {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Fix for TODO 8: Form Button Hover Styling */
+.simple-form button:hover {
+    background-color: #145dbf;
+}
