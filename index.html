@@ -7,111 +7,69 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    ```
+    <div id="app">
+        <header>
+            <h1>SocialBook</h1>
+            <p>A simple social media app - Style it with CSS!</p>
+        </header>
 
----
+        <nav class="navigation">
+            <a href="#feed">Feed</a>
+            <a href="#profile">Profile</a>
+            <a href="#messages">Messages</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-### 2. `styles.css`
-Replace everything from the top of your file down to the "Basic Social Media Styling" section with this code. This follows the exact values required by your autograder checklist:
+        <section id="feed">
+            <h2>News Feed</h2>
+            <div class="post">
+                <h3 class="username">john_doe</h3>
+                <p>Just finished my web development project! 🎉</p>
+                <span class="timestamp">2 hours ago</span>
+            </div>
+            <div class="post highlight">
+                <h3 id="featured-user" class="username">sarah_dev</h3>
+                <p class="blue-text">Check out this amazing CSS tutorial!</p>
+                <p class="red-text">Link in my bio 👆</p>
+                <span class="timestamp">5 hours ago</span>
+            </div>
+        </section>
 
-```css
-/* TODO 2: Basic Element Selectors */
-p {
-    color: #333;
-    font-size: 16px;
-}
+        <section id="profile">
+            <h2>User Profile</h2>
+            <div class="profile-card">
+                <h3>CSS Specificity Battle</h3>
+                <p class="winner" id="specificity-test">
+                    This bio text color depends on CSS specificity rules!
+                </p>
+            </div>
+            <div class="profile-card">
+                <h3>Bio Override Test</h3>
+                <p class="important-test" style="color: blue;">
+                    Will !important override this inline blue?
+                </p>
+            </div>
+        </section>
 
-span {
-    color: #888;
-    font-size: 14px;
-}
+        <section id="messages">
+            <h2>Messages</h2>
+            <div class="message-thread">
+                <div class="chat-container">
+                    <p class="message sent">Hey! How's your CSS project going?</p>
+                    <span class="message-time">You - 10:30 AM</span>
+                </div>
+            </div>
+            <div class="message-thread">
+                <button class="send-button">Send Message</button>
+                <a href="#" class="chat-link">Start New Chat</a>
+            </div>
+        </section>
 
-/* TODO 3: Class Selectors */
-.username {
-    color: #1877f2;
-    font-weight: bold;
-}
-
-.blue-text {
-    color: #4267B2;
-}
-
-.red-text {
-    color: #e74c3c;
-}
-
-.highlight {
-    background-color: #f0f2f5;
-    padding: 15px;
-}
-
-/* TODO 4: ID Selectors */
-#featured-user {
-    color: #42b883;
-    font-size: 18px;
-}
-
-/* TODO 5: Specificity Battle */
-/* Rule 1: Element */
-p {
-    color: #333;
-}
-
-/* Rule 2: Class */
-.winner {
-    color: #ff6b6b;
-}
-
-/* Rule 4: Element + Class */
-p.winner {
-    color: #95a5a6;
-}
-
-/* Rule 3: ID (The Winner) */
-#specificity-test {
-    color: #4ecdc4;
-}
-
-/* TODO 6: !important Override */
-.important-test {
-    color: #e67e22 !important;
-}
-
-/* TODO 7: Descendant Selectors */
-.chat-container .message {
-    color: #2c3e50;
-}
-
-.chat-container .message-time {
-    color: #7f8c8d;
-    font-size: 12px;
-}
-
-.simple-form input {
-    border: 1px solid #ccc;
-    background-color: #ffffff;
-    color: #333;
-}
-
-/* TODO 8: Pseudo-classes */
-.send-button:hover {
-    background-color: #3b5998;
-    color: white;
-}
-
-.chat-link:hover {
-    color: #1877f2;
-    text-decoration: none;
-}
-
-.simple-form button:hover {
-    background-color: #145dbf;
-}
-
-/* TODO 9: Group Selectors */
-h4.trending-tag, 
-h5.trending-tag, 
-h6.trending-tag {
-    color: #8b9dc3;
-    font-family: Arial, sans-serif;
-}
+        <section id="trending">
+            <h2>Trending Topics</h2>
+            <h4 class="trending-tag">#WebDevelopment</h4>
+            <h5 class="trending-tag">#CSS</h5>
+        </section>
+    </div>
+</body>
+</html>
