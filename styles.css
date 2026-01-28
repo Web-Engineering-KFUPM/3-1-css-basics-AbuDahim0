@@ -1,61 +1,139 @@
-/* SocialBook CSS Styling Practice - Starter File */
-/* Complete the TODOs below to style your social media app */
+/* SocialBook CSS Styling Practice - Completed File */
 
-
-/* TODO 1: Use the <link> tag inside the <head> section to attach styles.css */
+/* TODO 1: (HTML Instruction) Ensure <link rel="stylesheet" href="styles.css"> is in your index.html */
 
 
 /* TODO 2: Basic Element Selectors */
 /* Style all paragraphs with color of value #333 and font-size of 16px */
+p {
+    color: #333;
+    font-size: 16px;
+}
+
 /* Style all span elements with color of value #888 and font-size of 14px */
+span {
+    color: #888;
+    font-size: 14px;
+}
 
 
 /* TODO 3: Class Selectors */
 /* Style usernames with class "username" to have color of value #1877f2 and font-weight as bold */
+.username {
+    color: #1877f2;
+    font-weight: bold;
+}
+
 /* Style posts with class "blue-text" to have color of value #4267B2 */
+.blue-text {
+    color: #4267B2;
+}
+
 /* Style posts with class "red-text" to have color of value #e74c3c */
+.red-text {
+    color: #e74c3c;
+}
+
 /* Style highlighted posts with class "highlight" to have background-color of value #f0f2f5 and padding of 15px */
+.highlight {
+    background-color: #f0f2f5;
+    padding: 15px;
+}
 
 
 /* TODO 4: ID Selectors */
 /* Style the featured user with id "featured-user" to have color of value #42b883 and font-size of 18px */
+#featured-user {
+    color: #42b883;
+    font-size: 18px;
+}
 
 
 /* TODO 5: Specificity Battle */
 /* Create multiple rules for the bio with id "specificity-test" and class "winner" */
+
 /* Rule 1: Use element selector p to make color of value #333 */
+p {
+    color: #333;
+}
 
 /* Rule 2: Use class selector .winner to make color of value #ff6b6b */
+.winner {
+    color: #ff6b6b;
+}
 
 /* Rule 3: Use ID selector #specificity-test to make color of value #4ecdc4 */
+/* NOTE: This is the Winner because IDs have the highest specificity */
+#specificity-test {
+    color: #4ecdc4;
+}
 
 /* Rule 4: Use element + class selector p.winner to make color of value #95a5a6 */
+p.winner {
+    color: #95a5a6;
+}
 
 
 /* TODO 6: !important Override */
 /* Use !important to override inline styles for class "important-test" */
 /* Make the color of value #e67e22 !important */
+.important-test {
+    color: #e67e22 !important;
+}
 
 
 /* TODO 7: Descendant Selectors */
 /* Style messages inside elements with class "chat-container" to have color of value #2c3e50 */
+.chat-container .message {
+    color: #2c3e50;
+}
+
 /* Style input elements inside elements with class "simple-form" to have border of value 1px solid #ccc */
-/* Style message times inside elements with class "chat-container" to have color of value #7f8c8d and font-size of 12px */
 /* Style input elements inside elements with class "simple-form" to have background-color of value #ffffff */
 /* Style input elements inside elements with class "simple-form" to have color of value #333 */
+.simple-form input {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Style message times inside elements with class "chat-container" to have color of value #7f8c8d and font-size of 12px */
+.chat-container .message-time {
+    color: #7f8c8d;
+    font-size: 12px;
+}
 
 
 /* TODO 8: Pseudo-classes */
 /* Style buttons with class "send-button" on hover to have background-color of value #3b5998 and text color as white */
+.send-button:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
 /* Style buttons inside elements with class "simple-form" on hover to have background-color of value #145dbf */
+.simple-form button:hover {
+    background-color: #145dbf;
+}
+
 /* Style links with class "chat-link" on hover to have color of value #1877f2 and text-decoration as none */
+.chat-link:hover {
+    color: #1877f2;
+    text-decoration: none;
+}
 
 
 /* TODO 9: Group Selectors */
 /* Style trending tags h4, h5, h6 with class "trending-tag" to have color of value #8b9dc3 and make the font-family Arial */
+h4.trending-tag, h5.trending-tag, h6.trending-tag {
+    color: #8b9dc3;
+    font-family: Arial, sans-serif;
+}
 
 
-/* Basic Social Media Styling (Already completed for you) */
+/* =========================================
+   Basic Social Media Styling (From Starter File)
+   ========================================= */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
@@ -219,6 +297,3 @@ footer {
     color: #65676b;
     font-size: 14px;
 }
-
-/*Start writing you css code from here*/
-
